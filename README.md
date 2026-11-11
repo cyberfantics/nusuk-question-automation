@@ -43,6 +43,9 @@ python nusuk.py run -n 5 --door any             # any door, picked in turn
 python nusuk.py run -n 20 --max-seconds 600     # stop after 10 minutes
 python nusuk.py state                           # what is on screen right now
 python nusuk.py learn "Question?" "Answer"      # teach it a new question
+python nusuk.py learn                           # no typing: read the question
+                                                # off the screen, tap the answer,
+                                                # it saves it
 python nusuk.py stats                           # how many questions the bank holds
 ```
 
@@ -62,7 +65,15 @@ Questions repeat, so the bank is the whole point. Every question the tool answer
 
 ## Adding your own questions
 
-The easiest way is `learn`:
+The easiest way is `learn` — with no typing at all:
+
+1. Open the question in the Nusuk app.
+2. Run `python nusuk.py learn`.
+3. Tap the correct answer on your phone. The tool watches the screen, sees which option you tapped, and saves that question and answer into the bank. Then it taps Check your answer itself, so you see straight away whether the answer was right.
+
+If the tool cannot see which option you tapped (some screens don't mark it), it asks you to type the option's number instead — still no typing the question. And if the question is already in the bank, it just tells you the answer it has.
+
+You can still teach it the old way, by typing both:
 
 ```bash
 python nusuk.py learn "About whom was Surat al-Masad revealed?" "Abu Lahab and his wife"
@@ -81,6 +92,7 @@ A few things that make it work on a real phone:
 - The Check button is often clipped off the bottom of the screen, so the script scrolls the question sheet up until it has real bounds, and taps the full-width strip at the bottom edge when the label has none.
 - If a stray tap lands in another app, it presses back twice and brings Nusuk back.
 - A watchdog stops the run if it takes too many steps or gets stuck on one screen.
+- Colours are optional: if `colorama` is installed (`pip install colorama`) the banner, the right and wrong answers, and the warnings print in colour. Without it, everything still works — it just prints plain. Same style as the key tool.
 
 ## If it breaks
 

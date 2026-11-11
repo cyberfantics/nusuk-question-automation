@@ -8,11 +8,13 @@ Drives the Nusuk Android app over adb:
   * handles "Open the door?" dialogs and door selection
 
 Usage:
-  python .phone/nusuk.py state              # print what is on screen
-  python .phone/nusuk.py run -n 5           # answer up to 5 questions
-  python .phone/nusuk.py run -n 5 --door any
-  python .phone/nusuk.py learn "Q?" "answer"
-  python .phone/nusuk.py stats
+  python nusuk.py state              # print what is on screen
+  python nusuk.py run -n 5           # answer up to 5 questions
+  python nusuk.py run -n 5 --door any
+  python nusuk.py learn "Q?" "answer"
+  python nusuk.py learn              # no typing: read the question off the
+                                     # screen, tap the answer, it saves it
+  python nusuk.py stats
 
 Exit codes: 0 ok / done, 3 unknown question (needs learning), 4 could not act.
 """
@@ -34,6 +36,59 @@ try:
 except Exception:
     pass
 
+
+# ---- developer banner (colorama, optional) ------------------------------
+# Same style as nusuk-key-automation: colorama gives the banner and the
+# key lines their colours on Windows. If it is not installed everything
+# still prints, just without colours.
+try:
+    from colorama import init as _colorama_init, Fore, Style
+    _colorama_init(autoreset=True)
+    _COLOR = True
+except ImportError:
+    _COLOR = False
+
+    class _NoColor:
+        def __getattr__(self, name):
+            return ""
+
+    Fore = Style = _NoColor()
+
+
+def _paint(text, color=""):
+    return f"{color}{text}" if _COLOR else text
+
+
+def _set_console_title():
+    """Put the tool name in the console window's title bar (Windows only).
+
+    The title bar is the one part of a console window that never scrolls
+    away, so the tool stays identified no matter how many questions run.
+    """
+    if os.name != "nt":
+        return
+    try:
+        os.system("title NUSUK QUESTION AUTOMATION - by Mansoor Bukhari - CyberFantics")
+    except Exception:
+        pass
+
+
+def print_banner():
+    """Show the tool title and the developer's links, in colour when possible."""
+    _set_console_title()
+    bar = "=" * 55
+    print(_paint(bar, Fore.CYAN + Style.BRIGHT))
+    print(_paint("  NUSUK QUESTION AUTOMATION", Fore.CYAN + Style.BRIGHT))
+    print(_paint("  by Mansoor Bukhari  •  CyberFantics", Fore.GREEN + Style.BRIGHT))
+    print(_paint("  Python & Flutter Developer | AI Automation Engineer", Fore.YELLOW))
+    print(_paint("-" * 55, Fore.CYAN))
+    print(_paint("  GitHub:    ", Fore.YELLOW) + _paint("github.com/cyberfantics", Fore.WHITE + Style.BRIGHT))
+    print(_paint("  LinkedIn:  ", Fore.YELLOW) + _paint("linkedin.com/in/mansoor-bukhari", Fore.WHITE + Style.BRIGHT))
+    print(_paint("  Instagram: ", Fore.YELLOW) + _paint("instagram.com/CyberFantics", Fore.WHITE + Style.BRIGHT))
+    print(_paint("  YouTube:   ", Fore.YELLOW) + _paint("youtube.com/@CyberFantics", Fore.WHITE + Style.BRIGHT))
+    print(_paint(bar, Fore.CYAN + Style.BRIGHT))
+
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 BANK_PATH = os.path.join(HERE, "qa_bank.json")
 DOORS = ["prophet", "quran", "makkah", "madinah"]
@@ -50,10 +105,15 @@ CHECK_SETTLE = 0.12
 
 # ---------------------------------------------------------------- adb helpers
 def adb(*args: str, timeout: int = 30) -> str:
-    out = subprocess.run(
-        ["adb", *args], capture_output=True, text=True, encoding="utf-8",
-        errors="replace", timeout=timeout,
-    )
+    """Run adb and return stdout. Empty string if adb is missing or fails,
+    so the tool fails cleanly (no question on screen) instead of crashing."""
+    try:
+        out = subprocess.run(
+            ["adb", *args], capture_output=True, text=True, encoding="utf-8",
+            errors="replace", timeout=timeout,
+        )
+    except (FileNotFoundError, subprocess.TimeoutExpired):
+        return ""
     return out.stdout
 
 
@@ -86,6 +146,8 @@ def dump() -> list[dict]:
         nodes.append({
             "text": text,
             "clickable": attr("clickable") == "true",
+            "selected": attr("selected") == "true",
+            "checked": attr("checked") == "true",
             "cls": attr("class").split(".")[-1],
             "bounds": tuple(int(v) for v in b.groups()),
         })
@@ -260,26 +322,27 @@ def do_open_door(screen: dict, door: str | None) -> bool:
 def answer_question(screen: dict, bank: dict) -> str:
     q, options = screen["question"], screen["options"]
     if not q or len(options) < 2:
-        print("!! could not parse question/options")
+        print(_paint("!! could not parse question/options", Fore.RED))
         for o in options:
             print("   opt:", o["text"])
         return "parse_fail"
     hit = lookup(bank, q)
     if not hit:
-        print("\n=== UNKNOWN QUESTION ===")
+        print(_paint("\n=== UNKNOWN QUESTION ===", Fore.YELLOW + Style.BRIGHT))
         print(q)
         for i, o in enumerate(options, 1):
             print(f"  {i}. {o['text']}")
-        print("=== add with: python .phone/nusuk.py learn <question> <answer> ===\n")
+        print("=== add with: python nusuk.py learn \"<question>\" \"<answer>\" ===")
+        print("=== or just:    python nusuk.py learn   (tap the answer on your phone) ===\n")
         return "unknown"
     entry, score = hit
     opt = pick_option(options, entry["answer"])
     if not opt:
-        print(f"!! answer '{entry['answer']}' does not match options for: {q}")
+        print(_paint(f"!! answer '{entry['answer']}' does not match options for: {q}", Fore.RED))
         for i, o in enumerate(options, 1):
             print(f"  {i}. {o['text']}")
         return "unknown"
-    print(f"Q: {q}\n   -> {opt['text']}  (bank score {score:.2f})", flush=True)
+    print(_paint(f"Q: {q}", Fore.CYAN) + "\n   -> " + _paint(opt["text"], Fore.GREEN + Style.BRIGHT) + _paint(f"  (bank score {score:.2f})", Fore.YELLOW), flush=True)
     tap(*opt.get("tap", center(opt["bounds"])), settle=OPTION_SETTLE)
     tap_check(screen)
     screen["chosen"] = opt["text"]
@@ -343,9 +406,9 @@ def log_line(question: str, chosen: str, correct: bool) -> None:
 def handle_result(screen: dict, bank: dict, q: str, chosen: str = "") -> None:
     """After checking the answer the per-question entry gets a hit counter."""
     if screen.get("correct"):
-        print("   correct ✔")
+        print(_paint("   correct ✔", Fore.GREEN + Style.BRIGHT))
     else:
-        print("   WRONG ✘ - bank entry needs fixing")
+        print(_paint("   WRONG ✘ - bank entry needs fixing", Fore.RED + Style.BRIGHT))
         key = norm(q)
         if key in bank:
             bank[key]["verified"] = False
@@ -358,6 +421,7 @@ def say(msg: str) -> None:
 
 
 def run(rounds: int, door: str | None, deadline: float | None = None) -> int:
+    print_banner()
     bank = load_bank()
     answered = correct = 0
     i = 0
@@ -367,15 +431,15 @@ def run(rounds: int, door: str | None, deadline: float | None = None) -> int:
     while answered < rounds:
         guard += 1
         if guard > 80:
-            say("!! watchdog: too many steps, stopping")
+            say(_paint("!! watchdog: too many steps, stopping", Fore.RED))
             return 4
         if deadline and time.time() > deadline:
-            say(f"!! time budget reached ({answered} answered)")
+            say(_paint(f"!! time budget reached ({answered} answered)", Fore.YELLOW))
             return 0
         kind = scr["kind"]
         per_kind[kind] = per_kind.get(kind, 0) + 1
         if per_kind[kind] > 6:
-            say(f"!! stuck on '{kind}' ({per_kind[kind]}x). Screen text:")
+            say(_paint(f"!! stuck on '{kind}' ({per_kind[kind]}x). Screen text:", Fore.RED))
             for n in scr["nodes"]:
                 if n["text"]:
                     say(f"     {n['text'][:60]}")
@@ -384,9 +448,9 @@ def run(rounds: int, door: str | None, deadline: float | None = None) -> int:
         if kind == "chooser":
             d = door if door and door != "any" else DOORS[i % len(DOORS)]
             i += 1
-            say(f".. door: {d}")
+            say(_paint(f".. door: {d}", Fore.CYAN))
             if not do_open_door(scr, None if door == "any" else d):
-                say("!! no door cards found")
+                say(_paint("!! no door cards found", Fore.RED))
                 return 4
             scr = wait_change(prev)
             per_kind.clear()
@@ -400,7 +464,7 @@ def run(rounds: int, door: str | None, deadline: float | None = None) -> int:
         if kind == "key_dialog":
             ok = [n for n in scr["nodes"] if "Open the door" in n["text"]]
             if not ok:
-                say("!! key dialog with no 'Open the door' button")
+                say(_paint("!! key dialog with no 'Open the door' button", Fore.RED))
                 for n in scr["nodes"]:
                     if n["text"]:
                         say(f"     {n['text'][:60]}")
@@ -415,7 +479,7 @@ def run(rounds: int, door: str | None, deadline: float | None = None) -> int:
                 continue
             res = answer_question(scr, bank)
             if res == "unknown":
-                say(f"stopped at unknown question #{answered + 1} of this run")
+                say(_paint(f"stopped at unknown question #{answered + 1} of this run", Fore.YELLOW))
                 return 3
             if res == "parse_fail":
                 return 4
@@ -426,7 +490,7 @@ def run(rounds: int, door: str | None, deadline: float | None = None) -> int:
                 if after["kind"] == "result":
                     break
                 if after["kind"] == "question" and after["question"] == last_q:
-                    say("   (answer did not submit, retrying option + check)")
+                    say(_paint("   (answer did not submit, retrying option + check)", Fore.YELLOW))
                     tp = sig(after["nodes"])
                     if scr.get("chosen_bounds"):
                         tap(*scr["chosen_bounds"], settle=OPTION_SETTLE)
@@ -460,7 +524,7 @@ def run(rounds: int, door: str | None, deadline: float | None = None) -> int:
         if kind == "result":
             play = [n for n in scr["nodes"] if "Play again" in n["text"]]
             if not play:
-                say("on result screen, no 'Play again'")
+                say(_paint("on result screen, no 'Play again'", Fore.RED))
                 return 4
             tap(*center(play[0]["bounds"]), settle=0.08)
             scr = wait_change(prev)
@@ -469,14 +533,14 @@ def run(rounds: int, door: str | None, deadline: float | None = None) -> int:
         if "Your key can unlock the door" in joined or "Check your answer" in joined:
             scr = wait_change(prev, timeout=6)
             continue
-        say(f"!! stray screen, recovering: {joined[:120]}")
+        say(_paint(f"!! stray screen, recovering: {joined[:120]}", Fore.RED))
         recover()
         scr = read_screen()
         per_kind.clear()
         if scr["kind"] == "unknown":
-            say("!! still lost after recovery")
+            say(_paint("!! still lost after recovery", Fore.RED))
             return 4
-    say("Done: answered %d, correct %d." % (answered, correct))
+    say(_paint("Done: answered %d, correct %d." % (answered, correct), Fore.GREEN + Style.BRIGHT))
     return 0
 
 
@@ -486,7 +550,91 @@ def learn(question: str, answer: str) -> int:
     bank[key] = {"question": question, "answer": answer,
                  "used": bank.get(key, {}).get("used", 0)}
     save_bank(bank)
-    print(f"learned ({len(bank)} total): {question} -> {answer}")
+    print(_paint(f"learned ({len(bank)} total): {question} -> {answer}", Fore.GREEN + Style.BRIGHT))
+    return 0
+
+
+def wait_for_selection(timeout: float = 90.0):
+    """Wait until the user taps an option on the phone.
+
+    Polls the screen for a selected/checked option. Returns the tapped
+    option node, or None if nothing was tapped before the timeout, or if
+    the screen left the question card (e.g. the user tapped Check already).
+    """
+    t0 = time.time()
+    while time.time() - t0 < timeout:
+        scr = read_screen()
+        if scr["kind"] != "question":
+            return None
+        for o in scr.get("options", []):
+            if o.get("selected") or o.get("checked"):
+                return o
+        time.sleep(1.0)
+    return None
+
+
+def learn_interactive() -> int:
+    """Learn the question on screen right now — no typing needed.
+
+    Read the question off the phone, show its options, and wait for the
+    user to tap the correct answer. The tapped option is saved into the
+    bank, then the answer is checked in the app to confirm it.
+    """
+    print_banner()
+    bank = load_bank()
+    scr = read_screen()
+    if scr["kind"] != "question":
+        print(_paint("No question on screen. Open a question in the Nusuk app first, then run learn.", Fore.YELLOW))
+        return 1
+    q, options = scr["question"], scr["options"]
+    if not q or len(options) < 2:
+        print(_paint("Could not read the question or its options.", Fore.RED))
+        return 1
+    hit = lookup(bank, q)
+    if hit:
+        entry, score = hit
+        print(_paint(f"Already in the bank: {q} -> {entry['answer']}  (score {score:.2f})", Fore.CYAN))
+        return 0
+    print(_paint(f"Question: {q}", Fore.CYAN + Style.BRIGHT))
+    for i, o in enumerate(options, 1):
+        print(f"  {i}. {o['text']}")
+    print("Tap the correct answer on your phone — I'll watch for it (up to 90 seconds).")
+    chosen = wait_for_selection()
+    if chosen is None:
+        # Could not see the tap (some screens don't mark the tapped option
+        # as selected). Fall back to a number — still no typing the question.
+        print(_paint("Could not see which option you tapped.", Fore.YELLOW))
+        for _ in range(3):
+            try:
+                pick = input("Type the number of the answer you tapped (Enter to quit): ").strip()
+            except (EOFError, KeyboardInterrupt):
+                print("\nQuitting without saving.")
+                return 0
+            if not pick:
+                return 0
+            if pick.isdigit() and 1 <= int(pick) <= len(options):
+                chosen = options[int(pick) - 1]
+                break
+            print(f"Enter a number from 1 to {len(options)}.")
+        if chosen is None:
+            print("Quitting without saving.")
+            return 0
+    answer = chosen["text"]
+    learn(q, answer)
+    bank = load_bank()  # refresh: learn() saved a fresh copy with the new entry
+    # Confirm it in the app: tap Check and read the result.
+    scr = read_screen()
+    if scr["kind"] == "result":
+        handle_result(scr, bank, q, answer)
+    elif scr["kind"] == "question":
+        tap_check(scr)
+        after = wait_change(sig(scr["nodes"]))
+        if after and after["kind"] == "result":
+            handle_result(after, bank, q, answer)
+        else:
+            print("Saved. Tap Check your answer in the app to confirm it.")
+    else:
+        print("Saved. Tap Check your answer in the app to confirm it.")
     return 0
 
 
@@ -499,16 +647,16 @@ def main() -> int:
     p_run.add_argument("--door", default="any", choices=["any", *DOORS])
     p_run.add_argument("--max-seconds", type=float, default=0)
     p_learn = sub.add_parser("learn")
-    p_learn.add_argument("question")
-    p_learn.add_argument("answer")
+    p_learn.add_argument("question", nargs="?")
+    p_learn.add_argument("answer", nargs="?")
     sub.add_parser("stats")
     a = ap.parse_args()
 
     if a.cmd == "state":
         s = read_screen()
-        print("kind:", s["kind"])
+        print("kind:", _paint(s["kind"], Fore.CYAN))
         if s["kind"] == "question":
-            print("Q:", s["question"])
+            print("Q:", _paint(s["question"], Fore.CYAN))
             for i, o in enumerate(s["options"], 1):
                 print(f"  {i}. {o['text']}")
         else:
@@ -520,10 +668,15 @@ def main() -> int:
         dl = time.time() + a.max_seconds if a.max_seconds else None
         return run(a.rounds, a.door, dl)
     if a.cmd == "learn":
+        if a.question is None and a.answer is None:
+            return learn_interactive()
+        if a.question is None or a.answer is None:
+            print(_paint('Usage: python nusuk.py learn "question" "answer"  (or just: python nusuk.py learn)', Fore.YELLOW))
+            return 1
         return learn(a.question, a.answer)
     if a.cmd == "stats":
         bank = load_bank()
-        print(f"{len(bank)} questions in bank")
+        print(_paint(f"{len(bank)} questions in bank", Fore.CYAN + Style.BRIGHT))
         for k, v in sorted(bank.items(), key=lambda kv: -kv[1].get("used", 0))[:20]:
             print(f"  [{v.get('used',0)}x] {v['question'][:70]} -> {v['answer'][:40]}")
         return 0
