@@ -89,7 +89,17 @@ def print_banner():
     print(_paint(bar, Fore.CYAN + Style.BRIGHT))
 
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+def _base_dir():
+    """Folder the program lives in: next to the exe when frozen by
+    PyInstaller, else next to the script. The bank and the log must sit
+    next to the exe, or the exe would look for them in PyInstaller's
+    temporary folder and lose them when it exits."""
+    if getattr(sys, "frozen", False):
+        return os.path.dirname(os.path.abspath(sys.executable))
+    return os.path.dirname(os.path.abspath(__file__))
+
+
+HERE = _base_dir()
 BANK_PATH = os.path.join(HERE, "qa_bank.json")
 DOORS = ["prophet", "quran", "makkah", "madinah"]
 DOOR_NAMES = {
@@ -420,7 +430,8 @@ def say(msg: str) -> None:
     print(msg, flush=True)
 
 
-def run(rounds: int, door: str | None, deadline: float | None = None) -> int:
+def run(rounds: int, door: str | None, deadline: float | None = None,
+        max_steps: int = 80) -> int:
     print_banner()
     bank = load_bank()
     answered = correct = 0
@@ -430,7 +441,7 @@ def run(rounds: int, door: str | None, deadline: float | None = None) -> int:
     scr = read_screen()
     while answered < rounds:
         guard += 1
-        if guard > 80:
+        if guard > max_steps:
             say(_paint("!! watchdog: too many steps, stopping", Fore.RED))
             return 4
         if deadline and time.time() > deadline:

@@ -56,8 +56,11 @@ Exit codes: 0 done, 3 unknown question (needs learning), 4 could not act.
 | File | What it is |
 | --- | --- |
 | `nusuk.py` | The bot. Python, ADB and UI Automator. |
+| `answer_questions.py` | The exe's entry point — answers questions until it stops. |
 | `qa_bank.json` | The answers. A growing bank — every question the tool meets gets saved. |
 | `answers.log` | Created when you run it. One line per answered question, right or wrong. |
+| `make_icon.py` | Draws the logo (`logo.png` + `icon.ico`) — a golden "?" on deep teal. |
+| `build_exe.bat` | Builds the Windows exe in one double-click. |
 
 ## One thing to know
 
@@ -93,6 +96,28 @@ A few things that make it work on a real phone:
 - If a stray tap lands in another app, it presses back twice and brings Nusuk back.
 - A watchdog stops the run if it takes too many steps or gets stuck on one screen.
 - Colours are optional: if `colorama` is installed (`pip install colorama`) the banner, the right and wrong answers, and the warnings print in colour. Without it, everything still works — it just prints plain. Same style as the key tool.
+
+## Windows exe
+
+The exe does one thing: answer questions until it stops — when it meets a question it does not know (teach it with `learn` and run it again), gets stuck, or runs out of steps. No command to type: double-click it and it goes.
+
+Build it on Windows with PyInstaller (one file, console):
+
+```bat
+pip install pyinstaller colorama
+python make_icon.py
+python -m PyInstaller --onefile --console --name nusuk_questions --icon icon.ico --hidden-import=colorama answer_questions.py
+```
+
+Or just run `build_exe.bat` — it does the same three steps.
+
+The exe is `dist\nusuk_questions.exe`. It reads `qa_bank.json` from the folder it sits in, so keep these files together:
+
+- `nusuk_questions.exe`
+- `qa_bank.json` — the answers. The exe will not find your bank without it.
+- `adb.exe`, `AdbWinApi.dll`, `AdbWinUsbApi.dll` (from platform-tools)
+
+For the other functions — `learn`, `state`, `stats` — run the script itself (`python nusuk.py learn` and so on). They are not in the exe.
 
 ## If it breaks
 
