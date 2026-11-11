@@ -124,7 +124,7 @@ def adb(*args: str, timeout: int = 30) -> str:
         )
     except (FileNotFoundError, subprocess.TimeoutExpired):
         return ""
-    return out.stdout
+    return out.stdout or ""
 
 
 def tap(x: int, y: int, settle: float = 0.08) -> None:
