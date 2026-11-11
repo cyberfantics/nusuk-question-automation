@@ -1,4 +1,9 @@
 {
+  "about which mountain did the prophet say this is a mountain that loves us and we love it": {
+    "answer": "Mount Uhud",
+    "question": "About which mountain did the Prophet ﷺ say: “This is a mountain that loves us and we love it”?",
+    "used": 1
+  },
   "about whom was surat al masad revealed": {
     "answer": "Abu Lahab and his wife",
     "question": "About whom was Surat al-Masad revealed?",
@@ -7,7 +12,7 @@
   "against whom did the muslims march in the battle of tabuk": {
     "answer": "The Romans",
     "question": "Against whom did the Muslims march in the Battle of Tabuk?",
-    "used": 1
+    "used": 2
   },
   "against whom was the battle of khaybar fought": {
     "answer": "The Jews",
@@ -22,7 +27,7 @@
   "approximately how many muslims fought at badr": {
     "answer": "Three hundred and some (313)",
     "question": "Approximately how many Muslims fought at Badr?",
-    "used": 1
+    "used": 2
   },
   "approximately how many polytheists fought at badr": {
     "answer": "About one thousand",
@@ -32,32 +37,47 @@
   "approximately how many years did the revelation of the holy quran last": {
     "answer": "23 years",
     "question": "Approximately how many years did the revelation of the Holy Quran last?",
-    "used": 1
+    "used": 2
   },
   "at which mountain did the muslims camp during the battle of the trench": {
     "answer": "Mount Sal’",
     "question": "At which mountain did the Muslims camp during the Battle of the Trench?",
-    "used": 1
+    "used": 2
   },
   "at whose hands was khaybar conquered": {
     "answer": "Ali ibn Abi Talib",
     "question": "At whose hands was Khaybar conquered?",
     "used": 1
   },
+  "between which two mountains did hagar run in search of water": {
+    "answer": "Safa and Marwa",
+    "question": "Between which two mountains did Hagar run in search of water?",
+    "used": 2
+  },
+  "between whom did the prophet establish brotherhood after the hijra": {
+    "answer": "The Muhajirun and the Ansar",
+    "question": "Between whom did the Prophet ﷺ establish brotherhood after the Hijra?",
+    "used": 2
+  },
   "by what name did god name medina as mentioned in the hadith": {
     "answer": "Tabah",
     "question": "By what name did God name Medina, as mentioned in the hadith?",
-    "used": 1
+    "used": 2
   },
   "by what name did jesus peace be upon him give glad tidings of the prophet pbuh": {
     "answer": "Ahmad",
     "question": "By what name did Jesus (peace be upon him) give glad tidings of the Prophet (PBUH)?",
-    "used": 1
+    "used": 2
+  },
+  "complete the hadith about zamzam the water of zamzam is": {
+    "answer": "“For whatever it is drunk for”",
+    "question": "Complete the hadith about Zamzam: “The water of Zamzam is ...”",
+    "used": 2
   },
   "complete the hadith between my house and my minbar": {
     "answer": "A garden from the gardens of Paradise",
     "question": "Complete the hadith: “Between my house and my minbar ...”",
-    "used": 1
+    "used": 2
   },
   "complete the hadith hajj is": {
     "answer": "Arafah",
@@ -69,10 +89,15 @@
     "question": "Complete the hadith: “Medina is better for them if only they ...”",
     "used": 1
   },
+  "complete the hadith the best of you are those who learn the quran": {
+    "answer": "And taught it",
+    "question": "Complete the hadith: “The best of you are those who learn the Quran ...”",
+    "used": 2
+  },
   "complete the hadith the sign of faith is love of": {
     "answer": "The Ansar",
     "question": "Complete the hadith: “The sign of faith is love of ...”",
-    "used": 1
+    "used": 2
   },
   "complete the hadith were it not for the hijra i would be a man from": {
     "answer": "The Ansar",
@@ -84,10 +109,20 @@
     "question": "Complete the hadith: “Whoever is able to die in Medina ...”",
     "used": 1
   },
+  "did the prophet read and write": {
+    "answer": "He was unlettered (ummi)",
+    "question": "Did the Prophet ﷺ read and write?",
+    "used": 1
+  },
+  "did the prophet take part with his companions in digging the trench": {
+    "answer": "Yes, he dug with them and carried the soil",
+    "question": "Did the Prophet ﷺ take part with his companions in digging the Trench?",
+    "used": 1
+  },
   "during tawaf on which side of the person is the kaaba": {
     "answer": "On his left",
     "question": "During tawaf, on which side of the person is the Kaaba?",
-    "used": 1
+    "used": 2
   },
   "for how many years did the prophet call his people in mecca before the hijra": {
     "answer": "13 years",
@@ -102,7 +137,7 @@
   "for whose sake did the water of zamzam first gush forth": {
     "answer": "Ishmael and his mother Hagar",
     "question": "For whose sake did the water of Zamzam first gush forth?",
-    "used": 1
+    "used": 2
   },
   "from which mountain does the person performing sa'i begin between safa and marwa": {
     "answer": "Safa",
@@ -114,6 +149,11 @@
     "question": "“Hijr Ismail” (al-Hatim) is part of what?",
     "used": 1
   },
+  "how did abraham peace be upon him describe the valley of mecca in his supplication": {
+    "answer": "A valley without cultivation",
+    "question": "How did Abraham (peace be upon him) describe the valley of Mecca in his supplication?",
+    "used": 1
+  },
   "how did aisha may allah be pleased with her describe the prophet's character": {
     "answer": "“His character was the Quran”",
     "question": "How did Aisha (may Allah be pleased with her) describe the Prophet’s ﷺ character?",
@@ -122,26 +162,51 @@
   "how did allah describe his prophet's character": {
     "answer": "“And indeed, you are of a great moral character” (Quran 68:4)",
     "question": "How did Allah describe His Prophet’s ﷺ character?",
-    "used": 0
+    "used": 1
+  },
+  "how did god describe the kaaba in his words god made the kaaba the sacred house": {
+    "answer": "A support (standing) for the people",
+    "question": "How did God describe the Kaaba in His words, “God made the Kaaba, the Sacred House ...”?",
+    "used": 2
+  },
+  "how did the prophet respond when jibril gabriel said to him read": {
+    "answer": "“I am not a reader”",
+    "question": "How did the Prophet ﷺ respond when Jibril (Gabriel) said to him, “Read”?",
+    "used": 1
   },
   "how did the prophet treat the people of makkah on the day of the conquest": {
     "answer": "He pardoned them",
     "question": "How did the Prophet ﷺ treat the people of Makkah on the day of the Conquest?",
-    "used": 1
+    "used": 2
   },
   "how large was the muslim army on the day of the conquest of makkah": {
     "answer": "Ten thousand",
     "question": "How large was the Muslim army on the day of the Conquest of Makkah?",
     "used": 0
   },
+  "how long did noah peace be upon him stay among his people calling them to god": {
+    "answer": "950 years",
+    "question": "How long did Noah (peace be upon him) stay among his people calling them to God?",
+    "used": 1
+  },
   "how long did noah stay among his people calling them to god": {
     "answer": "950 years",
     "question": "How long did Noah stay among his people calling them to God?",
     "used": 0
   },
+  "how long did the people of the cave stay in their cave": {
+    "answer": "309 years",
+    "question": "How long did the People of the Cave stay in their cave?",
+    "used": 1
+  },
   "how long was the truce period in the treaty of hudaybiyyah": {
     "answer": "Ten years",
     "question": "How long was the truce period in the Treaty of Hudaybiyyah?",
+    "used": 2
+  },
+  "how many are the messengers of firm resolve ulu al azm": {
+    "answer": "Five",
+    "question": "How many are the Messengers of Firm Resolve (Ulu al-‘Azm)?",
     "used": 1
   },
   "how many circuits of tawaf are made around the kaaba": {
@@ -152,6 +217,16 @@
   "how many companions were given the glad tidings of paradise in a single hadith": {
     "answer": "Ten",
     "question": "How many companions were given the glad tidings of Paradise in a single hadith?",
+    "used": 2
+  },
+  "how many daughters did the prophet have": {
+    "answer": "Four",
+    "question": "How many daughters did the Prophet ﷺ have?",
+    "used": 1
+  },
+  "how many good deeds are earned by whoever recites one letter from the book of god": {
+    "answer": "A good deed multiplied by ten",
+    "question": "How many good deeds are earned by whoever recites one letter from the Book of God?",
     "used": 1
   },
   "how many hizbs are in the holy quran": {
@@ -162,17 +237,17 @@
   "how many jamarat stoning pillars are there in mina": {
     "answer": "Three",
     "question": "How many jamarat (stoning pillars) are there in Mina?",
-    "used": 1
+    "used": 2
   },
   "how many juz' parts are in the holy quran": {
     "answer": "30 juz’",
     "question": "How many juz’ (parts) are in the Holy Quran?",
-    "used": 1
+    "used": 2
   },
   "how many laps of sa'i are there between safa and marwa": {
     "answer": "7 laps",
     "question": "How many laps of sa'i are there between Safa and Marwa?",
-    "used": 1
+    "used": 2
   },
   "how many mosques are there to which journeys may be undertaken specifically for worship": {
     "answer": "Three",
@@ -182,62 +257,77 @@
   "how many muslim martyrs were there on the day of uhud": {
     "answer": "Seventy martyrs",
     "question": "How many Muslim martyrs were there on the Day of Uhud?",
-    "used": 1
+    "used": 2
   },
   "how many nights did the prophet and his companion stay in the cave of thawr": {
     "answer": "Three nights",
     "question": "How many nights did the Prophet ﷺ and his companion stay in the Cave of Thawr?",
-    "used": 1
+    "used": 2
   },
   "how many pebbles are thrown at each jamrah": {
     "answer": "7 pebbles",
     "question": "How many pebbles are thrown at each jamrah?",
-    "used": 1
+    "used": 2
   },
   "how many prophets and messengers are mentioned by name in the quran": {
     "answer": "25",
     "question": "How many prophets and messengers are mentioned by name in the Quran?",
-    "used": 1
+    "used": 2
   },
   "how many rak'ahs does the person pray behind the maqam after tawaf": {
     "answer": "Two rak'ahs",
     "question": "How many rak'ahs does the person pray behind the Maqam after tawaf?",
-    "used": 1
+    "used": 2
   },
   "how many rightly guided caliphs were there": {
     "answer": "Four",
     "question": "How many Rightly Guided Caliphs were there?",
-    "used": 1
+    "used": 2
   },
   "how many surahs chapters are in the holy quran": {
     "answer": "114 surahs",
     "question": "How many surahs (chapters) are in the Holy Quran?",
     "used": 1
   },
+  "how many times did the prophet perform hajj after the hijra": {
+    "answer": "Once (the Farewell Hajj)",
+    "question": "How many times did the Prophet ﷺ perform Hajj after the Hijra?",
+    "used": 1
+  },
   "how many times does the name muhammad pbuh appear in the holy quran": {
     "answer": "4 times",
     "question": "How many times does the name “Muhammad” (PBUH) appear in the Holy Quran?",
-    "used": 1
+    "used": 2
   },
   "how many verses are in surat al fatiha": {
     "answer": "7 verses",
     "question": "How many verses are in Surat al-Fatiha?",
-    "used": 1
+    "used": 2
+  },
+  "how many verses are in surat al ikhlas": {
+    "answer": "4 verses",
+    "question": "How many verses are in Surat al-Ikhlas?",
+    "used": 2
   },
   "how many years did the call to islam remain secret in makkah": {
     "answer": "3 years",
     "question": "How many years did the call to Islam remain secret in Makkah?",
-    "used": 1
+    "used": 2
   },
   "how many years did the prophet stay in medina after the hijra": {
     "answer": "10 years",
     "question": "How many years did the Prophet ﷺ stay in Medina after the Hijra?",
-    "used": 1
+    "used": 2
+  },
+  "how old was the prophet at the time of the hijra to medina": {
+    "answer": "53 years",
+    "question": "How old was the Prophet ﷺ at the time of the Hijra to Medina?",
+    "used": 2
   },
   "how old was the prophet when he married khadijah may allah be pleased with her": {
     "answer": "25 years",
     "question": "How old was the Prophet ﷺ when he married Khadijah (may Allah be pleased with her)?",
-    "used": 1
+    "used": 2
   },
   "how old was the prophet when he passed away": {
     "answer": "63 years",
@@ -247,7 +337,7 @@
   "how old was the prophet when his grandfather abdul muttalib died": {
     "answer": "8 years",
     "question": "How old was the Prophet ﷺ when his grandfather Abdul-Muttalib died?",
-    "used": 1
+    "used": 2
   },
   "how old was the prophet when his mother aminah died": {
     "answer": "6 years",
@@ -267,22 +357,42 @@
   "in which battle did the muslims dig a trench around medina": {
     "answer": "The Battle of the Trench (al-Ahzab)",
     "question": "In which battle did the Muslims dig a trench around Medina?",
+    "used": 2
+  },
+  "in which cave did the prophet and his companion hide during the hijra migration": {
+    "answer": "Cave of Thawr",
+    "question": "In which cave did the Prophet ﷺ and his companion hide during the Hijra (migration)?",
     "used": 1
+  },
+  "in which cave did the revelation first descend": {
+    "answer": "Cave of Hira",
+    "question": "In which cave did the revelation first descend?",
+    "used": 1
+  },
+  "in which city did the prophet die": {
+    "answer": "Medina",
+    "question": "In which city did the Prophet ﷺ die?",
+    "used": 1
+  },
+  "in which city did the revelation to the prophet begin": {
+    "answer": "Mecca",
+    "question": "In which city did the revelation to the Prophet ﷺ begin?",
+    "used": 2
   },
   "in which city is quba mosque located": {
     "answer": "Medina",
     "question": "In which city is Quba Mosque located?",
-    "used": 1
+    "used": 2
   },
   "in which city is the holy kaaba located": {
     "answer": "Mecca",
     "question": "In which city is the Holy Kaaba located?",
-    "used": 1
+    "used": 2
   },
   "in which city was the adhan legislated": {
     "answer": "Medina",
     "question": "In which city was the adhan legislated?",
-    "used": 1
+    "used": 2
   },
   "in which city were most of the verses of rulings such as fasting and zakat revealed": {
     "answer": "Medina",
@@ -292,6 +402,11 @@
   "in which hijri month does hajj take place": {
     "answer": "Dhul-Hijjah",
     "question": "In which Hijri month does Hajj take place?",
+    "used": 2
+  },
+  "in which month did the battle of badr take place": {
+    "answer": "Ramadan",
+    "question": "In which month did the Battle of Badr take place?",
     "used": 1
   },
   "in which month did the prophet die": {
@@ -299,14 +414,39 @@
     "question": "In which month did the Prophet ﷺ die?",
     "used": 1
   },
+  "in which month was the conquest of mecca": {
+    "answer": "Ramadan",
+    "question": "In which month was the conquest of Mecca?",
+    "used": 2
+  },
+  "in which month was the holy quran revealed": {
+    "answer": "Ramadan",
+    "question": "In which month was the Holy Quran revealed?",
+    "used": 1
+  },
   "in which month was the prophet born according to the well known view": {
     "answer": "Rabi’ al-Awwal",
     "question": "In which month was the Prophet ﷺ born, according to the well-known view?",
-    "used": 0
+    "used": 1
+  },
+  "in which mosque did umar ibn al khattab gather the people behind a single imam for taraweeh": {
+    "answer": "The Prophet's Mosque",
+    "question": "In which mosque did Umar ibn al-Khattab gather the people behind a single imam for Taraweeh?",
+    "used": 1
   },
   "in which mosque is the holy kaaba located": {
     "answer": "The Sacred Mosque",
     "question": "In which mosque is the Holy Kaaba located?",
+    "used": 2
+  },
+  "in which surah are luqman's counsels to his son found": {
+    "answer": "Luqman",
+    "question": "In which surah are Luqman's counsels to his son found?",
+    "used": 1
+  },
+  "in which surah does the story of dhul qarnayn appear": {
+    "answer": "Al-Kahf",
+    "question": "In which surah does the story of Dhul-Qarnayn appear?",
     "used": 1
   },
   "in which surah does the story of the people of the cave appear": {
@@ -314,10 +454,40 @@
     "question": "In which surah does the story of the People of the Cave appear?",
     "used": 2
   },
+  "in which surah is ayat al kursi the throne verse": {
+    "answer": "Al-Baqara",
+    "question": "In which surah is Ayat al-Kursi (the Throne Verse)?",
+    "used": 2
+  },
+  "in which surah is the name mecca mentioned explicitly": {
+    "answer": "Al-Balad",
+    "question": "In which surah is the name Mecca mentioned explicitly?",
+    "used": 1
+  },
+  "in which surah is the story of the cow that god commanded the children of israel to slaughter": {
+    "answer": "Al-Baqara",
+    "question": "In which surah is the story of the cow that God commanded the Children of Israel to slaughter?",
+    "used": 0
+  },
+  "in which surah is the verse 'indeed it is we who sent down the reminder and indeed we will be its guardian'": {
+    "answer": "Ya-Sin",
+    "question": "In which surah is the verse: 'Indeed, it is We who sent down the Reminder, and indeed, We will be its guardian'?",
+    "used": 0
+  },
   "in which surah is the verse and say my lord increase me in knowledge": {
     "answer": "Ta-Ha",
     "question": "In which surah is the verse: “And say: My Lord, increase me in knowledge”?",
     "used": 1
+  },
+  "in which surah is the verse and your lord has decreed that you worship none but him and that you be good to your parents": {
+    "answer": "Al-Isra",
+    "question": "In which surah is the verse: “And your Lord has decreed that you worship none but Him, and that you be good to your parents”?",
+    "used": 0
+  },
+  "in which surah is the verse indeed god and his angels send blessings upon the prophet": {
+    "answer": "Al-Ahzab",
+    "question": "In which surah is the verse: “Indeed, God and His angels send blessings upon the Prophet”?",
+    "used": 2
   },
   "in which surah is the verse repeated and we have certainly made the quran easy for remembrance so is there any who will remember": {
     "answer": "Al-Qamar",
@@ -327,7 +497,7 @@
   "in which surah is the verse there is nothing like unto him and he is the all hearing the all seeing": {
     "answer": "Al-Shura",
     "question": "In which surah is the verse: “There is nothing like unto Him, and He is the All-Hearing, the All-Seeing”?",
-    "used": 1
+    "used": 2
   },
   "in which year did the prophet migrate from mecca to medina": {
     "answer": "The thirteenth year of the mission (622 CE)",
@@ -339,10 +509,15 @@
     "question": "In which year of the Hijra did the Prophet ﷺ die?",
     "used": 1
   },
+  "in which year of the hijra was fasting in ramadan made obligatory": {
+    "answer": "The second year",
+    "question": "In which year of the Hijra was fasting in Ramadan made obligatory?",
+    "used": 1
+  },
   "in which year of the hijra was quba mosque built": {
     "answer": "The first year",
     "question": "In which year of the Hijra was Quba Mosque built?",
-    "used": 1
+    "used": 2
   },
   "in which year of the hijrah did the battle of the trench khandaq take place": {
     "answer": "The fifth year",
@@ -352,11 +527,16 @@
   "in which year of the hijrah did the battle of uhud take place": {
     "answer": "The third year",
     "question": "In which year of the Hijrah did the Battle of Uhud take place?",
-    "used": 1
+    "used": 2
   },
   "in which year of the hijrah did the farewell pilgrimage take place": {
     "answer": "The tenth year",
     "question": "In which year of the Hijrah did the Farewell Pilgrimage take place?",
+    "used": 2
+  },
+  "in which year of the hijrah did the great battle of badr take place": {
+    "answer": "The second year",
+    "question": "In which year of the Hijrah did the Great Battle of Badr take place?",
     "used": 1
   },
   "in which year of the hijrah did the treaty of hudaybiyyah take place": {
@@ -367,7 +547,7 @@
   "in which year was the conquest of mecca": {
     "answer": "The eighth year after the Hijra",
     "question": "In which year was the conquest of Mecca?",
-    "used": 1
+    "used": 2
   },
   "in which year was the prophet born": {
     "answer": "The Year of the Elephant",
@@ -379,10 +559,15 @@
     "question": "In whose house did the Prophet ﷺ stay when he arrived in Medina?",
     "used": 2
   },
+  "into what did moses' staff peace be upon him turn when he threw it down": {
+    "answer": "A moving serpent",
+    "question": "Into what did Moses' staff (peace be upon him) turn when he threw it down?",
+    "used": 1
+  },
   "is arafat located within the boundaries of the haram": {
     "answer": "No, it is outside the boundaries of the Haram",
     "question": "Is Arafat located within the boundaries of the Haram?",
-    "used": 1
+    "used": 2
   },
   "is visiting medina a condition for the validity of hajj": {
     "answer": "No, Hajj is valid without it",
@@ -397,7 +582,7 @@
   "on which day of the week did the prophet pass away": {
     "answer": "Monday",
     "question": "On which day of the week did the Prophet ﷺ pass away?",
-    "used": 1
+    "used": 2
   },
   "on which day of the week was the prophet born": {
     "answer": "Monday",
@@ -414,10 +599,25 @@
     "question": "On whom is Hajj obligatory?",
     "used": 1
   },
+  "prayer in quba mosque has a reward equal to the reward of what": {
+    "answer": "An Umrah",
+    "question": "Prayer in Quba Mosque has a reward equal to the reward of what?",
+    "used": 2
+  },
+  "prayer in the prophet's mosque is better than how many prayers elsewhere except the sacred mosque": {
+    "answer": "One thousand prayers",
+    "question": "Prayer in the Prophet’s Mosque is better than how many prayers elsewhere, except the Sacred Mosque?",
+    "used": 1
+  },
+  "prayer in the sacred mosque is equal to how many prayers elsewhere": {
+    "answer": "One hundred thousand prayers",
+    "question": "Prayer in the Sacred Mosque is equal to how many prayers elsewhere?",
+    "used": 2
+  },
   "the people of which mosque did god praise in his words in it are men who love to purify themselves": {
     "answer": "Quba Mosque",
     "question": "The people of which mosque did God praise in His words, “In it are men who love to purify themselves”?",
-    "used": 1
+    "used": 2
   },
   "the prophet said about mecca by god you are the best of god's land and the most beloved land to god": {
     "answer": "“And had I not been driven out of you, I would not have left”",
@@ -429,10 +629,20 @@
     "question": "The Prophet said on the day of the conquest: Whoever enters the house of ... is safe.",
     "used": 1
   },
+  "the prophet said to mount uhud when it shook be still uhud for upon you is only": {
+    "answer": "A prophet, a truthful one (siddiq), and two martyrs",
+    "question": "The Prophet ﷺ said to Mount Uhud when it shook: “Be still, Uhud, for upon you is only ...”",
+    "used": 0
+  },
   "the she camel was the miracle of which prophet": {
     "answer": "Salih (peace be upon him)",
     "question": "The she-camel was the miracle of which prophet?",
-    "used": 0
+    "used": 1
+  },
+  "to what did the prophet liken medina in its expelling of impurity": {
+    "answer": "The bellows that removes the impurity of iron",
+    "question": "To what did the Prophet ﷺ liken Medina in its expelling of impurity?",
+    "used": 2
   },
   "to where did ali ibn abi talib move the capital of the caliphate from medina": {
     "answer": "Kufa",
@@ -447,22 +657,32 @@
   "to where did the muslims' qiblah change after bayt al maqdis jerusalem": {
     "answer": "The Holy Kaaba",
     "question": "To where did the Muslims’ qiblah change after Bayt al-Maqdis (Jerusalem)?",
+    "used": 2
+  },
+  "to which city did the prophet migrate from mecca": {
+    "answer": "Medina (Yathrib)",
+    "question": "To which city did the Prophet ﷺ migrate from Mecca?",
     "used": 1
   },
   "to which city near mecca did the prophet go to call its people and they harmed him": {
     "answer": "Ta’if",
     "question": "To which city near Mecca did the Prophet ﷺ go to call its people, and they harmed him?",
+    "used": 2
+  },
+  "to which clan of quraysh did the prophet belong": {
+    "answer": "Banu Hashim",
+    "question": "To which clan of Quraysh did the Prophet ﷺ belong?",
     "used": 1
   },
   "to which people was hud peace be upon him sent": {
     "answer": "Ad",
     "question": "To which people was Hud (peace be upon him) sent?",
-    "used": 1
+    "used": 2
   },
   "to which tribe does the prophet belong": {
     "answer": "Quraysh",
     "question": "To which tribe does the Prophet ﷺ belong?",
-    "used": 1
+    "used": 2
   },
   "to whom did the prophet return after the first revelation": {
     "answer": "His wife Khadijah",
@@ -472,7 +692,7 @@
   "to whom did the prophet send his letters after the treaty of hudaybiyyah": {
     "answer": "To kings and princes, inviting them to Islam",
     "question": "To whom did the Prophet ﷺ send his letters after the Treaty of Hudaybiyyah?",
-    "used": 1
+    "used": 2
   },
   "under what was the pledge of ridwan bay'at ar ridwan taken": {
     "answer": "Under a tree",
@@ -492,27 +712,47 @@
   "what are the three sacred sites mash'ar in hajj": {
     "answer": "Mina, Muzdalifah, and Arafat",
     "question": "What are the three sacred sites (mash'ar) in Hajj?",
-    "used": 1
+    "used": 2
   },
   "what are the two journeys of quraysh mentioned in surah quraysh": {
     "answer": "The journey of winter and summer",
     "question": "What are the two journeys of Quraysh mentioned in Surah Quraysh?",
+    "used": 2
+  },
+  "what befell the prophet at uhud": {
+    "answer": "His incisor was broken and his face was cut",
+    "question": "What befell the Prophet ﷺ at Uhud?",
     "used": 1
+  },
+  "what did allah call the day of badr in the quran": {
+    "answer": "The Day of Criterion (Yawm al-Furqan)",
+    "question": "What did Allah call the day of Badr in the Quran?",
+    "used": 2
   },
   "what did the ansar offer the muhajirun when they arrived in medina": {
     "answer": "That they share their wealth and houses with them",
     "question": "What did the Ansar offer the Muhajirun when they arrived in Medina?",
-    "used": 1
+    "used": 2
+  },
+  "what did the prophet do at home": {
+    "answer": "He was in the service of his family",
+    "question": "What did the Prophet ﷺ do at home?",
+    "used": 2
   },
   "what did the prophet promise to whoever endures the hardship and severity of medina": {
     "answer": "That he will have an intercessor or be a witness on the Day of Resurrection",
     "question": "What did the Prophet promise to whoever endures the hardship and severity of Medina?",
     "used": 1
   },
+  "what did the prophet throw on the heads of the polytheists besieging his house on the night of the hijrah": {
+    "answer": "Dust",
+    "question": "What did the Prophet ﷺ throw on the heads of the polytheists besieging his house on the night of the Hijrah?",
+    "used": 1
+  },
   "what does it mean that the prophet is the seal of the prophets": {
     "answer": "That he is the last of the prophets, so there is no prophet after him",
     "question": "What does it mean that the Prophet ﷺ is the “Seal of the Prophets”?",
-    "used": 1
+    "used": 2
   },
   "what does not enter medina as the prophet informed": {
     "answer": "The plague and the Dajjal",
@@ -522,7 +762,7 @@
   "what does the pilgrim and the umrah performer repeat after entering ihram": {
     "answer": "Labbayk Allahumma labbayk",
     "question": "What does the pilgrim and the umrah performer repeat after entering ihram?",
-    "used": 1
+    "used": 2
   },
   "what does the pilgrim throw in mina during the days of tashriq": {
     "answer": "The jamarat, with pebbles",
@@ -532,36 +772,56 @@
   "what does the umrah performer do after sa'i in order to exit ihram": {
     "answer": "He shaves or trims his hair",
     "question": "What does the umrah performer do after sa’i in order to exit ihram?",
-    "used": 1
+    "used": 2
   },
   "what does the visitor say when greeting the prophet": {
     "answer": "Peace be upon you, O Messenger of God",
     "question": "What does the visitor say when greeting the Prophet?",
+    "used": 2
+  },
+  "what is al kawthar that god gave his prophet pbuh": {
+    "answer": "A river in Paradise",
+    "question": "What is “al-Kawthar” that God gave His Prophet (PBUH)?",
     "used": 1
+  },
+  "what is meant by al mu'awwidhatayn the two surahs of refuge": {
+    "answer": "The two surahs al-Falaq and al-Nas",
+    "question": "What is meant by “al-Mu’awwidhatayn” (the two surahs of refuge)?",
+    "used": 2
   },
   "what is sunnah for someone who enters the prophet's mosque before sitting down": {
     "answer": "Praying two rak'ahs (greeting of the mosque)",
     "question": "What is sunnah for someone who enters the Prophet's Mosque before sitting down?",
-    "used": 1
+    "used": 2
   },
   "what is the blessed well located in the sacred mosque": {
     "answer": "Zamzam",
     "question": "What is the blessed well located in the Sacred Mosque?",
-    "used": 1
+    "used": 2
   },
   "what is the color of the famous dome above the prophet's chamber": {
     "answer": "Green",
     "question": "What is the color of the famous dome above the Prophet’s chamber?",
-    "used": 1
+    "used": 2
   },
   "what is the color of the kaaba's kiswah covering at present": {
     "answer": "Black",
     "question": "What is the color of the Kaaba's kiswah (covering) at present?",
-    "used": 1
+    "used": 2
+  },
+  "what is the eighth day of dhul hijjah called": {
+    "answer": "The Day of Tarwiyah",
+    "question": "What is the eighth day of Dhul-Hijjah called?",
+    "used": 2
   },
   "what is the famous mosque in mina": {
     "answer": "Masjid al-Khayf",
     "question": "What is the famous mosque in Mina?",
+    "used": 2
+  },
+  "what is the first month of the hijri year": {
+    "answer": "Muharram",
+    "question": "What is the first month of the Hijri year?",
     "used": 1
   },
   "what is the first surah in the noble mushaf": {
@@ -577,7 +837,7 @@
   "what is the last surah in the noble mushaf": {
     "answer": "Al-Nas",
     "question": "What is the last surah in the Noble Mushaf?",
-    "used": 1
+    "used": 2
   },
   "what is the longest madinan surah in the holy quran": {
     "answer": "Al-Baqarah",
@@ -589,20 +849,50 @@
     "question": "What is the longest surah in the Holy Quran?",
     "used": 2
   },
+  "what is the longest verse in the holy quran": {
+    "answer": "Ayat al-Dayn (the verse of debt)",
+    "question": "What is the longest verse in the Holy Quran?",
+    "used": 1
+  },
   "what is the man's clothing in ihram": {
     "answer": "An unstitched lower garment and upper garment",
     "question": "What is the man’s clothing in ihram?",
     "used": 2
+  },
+  "what is the miqat of the people of iraq": {
+    "answer": "Dhat Irq",
+    "question": "What is the miqat of the people of Iraq?",
+    "used": 2
+  },
+  "what is the miqat of the people of medina": {
+    "answer": "Dhul-Hulayfah (Abyar Ali)",
+    "question": "What is the miqat of the people of Medina?",
+    "used": 1
   },
   "what is the miqat of the people of najd": {
     "answer": "Qarn al-Manazil (al-Sayl al-Kabir)",
     "question": "What is the miqat of the people of Najd?",
     "used": 1
   },
+  "what is the miqat of the people of the levant sham and egypt": {
+    "answer": "Al-Juhfah",
+    "question": "What is the miqat of the people of the Levant (Sham) and Egypt?",
+    "used": 1
+  },
+  "what is the miqat of the people of yemen": {
+    "answer": "Yalamlam",
+    "question": "What is the miqat of the people of Yemen?",
+    "used": 1
+  },
+  "what is the mosque built near the place where the prophet delivered his sermon on the day of arafah in wadi uranah": {
+    "answer": "Masjid Namirah",
+    "question": "What is the mosque built near the place where the Prophet ﷺ delivered his sermon on the Day of Arafah in Wadi Uranah?",
+    "used": 2
+  },
   "what is the most famous historical cemetery in mecca": {
     "answer": "Al-Mu’alla (al-Hajun)",
     "question": "What is the most famous historical cemetery in Mecca?",
-    "used": 1
+    "used": 2
   },
   "what is the name of the book god revealed to our prophet muhammad pbuh": {
     "answer": "The Holy Quran",
@@ -617,11 +907,16 @@
   "what is the name of the famous mountain in arafat": {
     "answer": "Jabal al-Rahmah",
     "question": "What is the name of the famous mountain in Arafat?",
-    "used": 1
+    "used": 2
   },
   "what is the name of the mosque in muzdalifah": {
     "answer": "Al-Mash’ar al-Haram",
     "question": "What is the name of the mosque in Muzdalifah?",
+    "used": 2
+  },
+  "what is the name of the mother of ishmael peace be upon him who ran between safa and marwa": {
+    "answer": "Hajar (Hagar)",
+    "question": "What is the name of the mother of Ishmael (peace be upon him) who ran between Safa and Marwa?",
     "used": 1
   },
   "what is the name of the prophet's mosque in medina": {
@@ -632,7 +927,7 @@
   "what is the name of the tawaf performed by the pilgrim doing ifrad or qiran upon arriving in mecca": {
     "answer": "Tawaf al-Qudum (arrival tawaf)",
     "question": "What is the name of the tawaf performed by the pilgrim doing ifrad or qiran upon arriving in Mecca?",
-    "used": 1
+    "used": 2
   },
   "what is the name of the tawaf that is a pillar of hajj performed on the day of eid or after it": {
     "answer": "Tawaf al-Ifadah",
@@ -647,7 +942,17 @@
   "what is the only surah that does not begin with the bismala": {
     "answer": "At-Tawba",
     "question": "What is the only surah that does not begin with the Bismala?",
+    "used": 2
+  },
+  "what is the prophet's greatest everlasting miracle": {
+    "answer": "The Holy Quran",
+    "question": "What is the Prophet’s ﷺ greatest everlasting miracle?",
     "used": 1
+  },
+  "what is the recompense for whoever introduces an innovation in medina or shelters an innovator": {
+    "answer": "The curse of God, the angels, and all people is upon him",
+    "question": "What is the recompense for whoever introduces an innovation in Medina or shelters an innovator?",
+    "used": 2
   },
   "what is the ruling on the farewell tawaf for the pilgrim according to the majority of scholars": {
     "answer": "Obligatory",
@@ -657,31 +962,46 @@
   "what is the station of abraham maqam ibrahim": {
     "answer": "The stone on which Abraham (peace be upon him) stood when building the Kaaba",
     "question": "What is the “Station of Abraham” (Maqam Ibrahim)?",
+    "used": 2
+  },
+  "what is the sunnah supplication between the yemeni corner and the black stone": {
+    "answer": "“Our Lord, give us good in this world and good in the Hereafter, and protect us from the punishment of the Fire”",
+    "question": "What is the sunnah supplication between the Yemeni Corner and the Black Stone?",
     "used": 1
   },
   "what is the verse number of ayat al kursi in surat al baqara": {
     "answer": "255",
     "question": "What is the verse number of Ayat al-Kursi in Surat al-Baqara?",
-    "used": 1
+    "used": 2
   },
   "what is the well known name of the mountain that contains the cave of hira": {
     "answer": "Jabal al-Nur (Mount of Light)",
     "question": "What is the well-known name of the mountain that contains the Cave of Hira?",
-    "used": 1
+    "used": 2
   },
   "what is the year of sorrow": {
     "answer": "The year in which Khadijah and Abu Talib died",
     "question": "What is the Year of Sorrow?",
     "used": 1
   },
+  "what lies beneath the green dome": {
+    "answer": "The Noble Prophet’s Chamber",
+    "question": "What lies beneath the “Green Dome”?",
+    "used": 2
+  },
   "what mistake did the archers make on the day of uhud": {
     "answer": "They came down from the mountain seeking spoils",
     "question": "What mistake did the archers make on the Day of Uhud?",
-    "used": 1
+    "used": 2
   },
   "what title did the people of makkah give the prophet before the prophetic mission": {
     "answer": "The Truthful, the Trustworthy (As-Sadiq al-Amin)",
     "question": "What title did the people of Makkah give the Prophet ﷺ before the prophetic mission?",
+    "used": 2
+  },
+  "what title was given to asma bint abi bakr": {
+    "answer": "Dhat an-Nitaqayn (She of the Two Waistbands)",
+    "question": "What title was given to Asma bint Abi Bakr?",
     "used": 1
   },
   "what was engraved on the prophet's seal ring": {
@@ -702,37 +1022,47 @@
   "what was the first form of revelation the prophet experienced": {
     "answer": "The true dream during sleep",
     "question": "What was the first form of revelation the Prophet experienced?",
-    "used": 1
+    "used": 2
   },
   "what was the first house established for people to worship god": {
     "answer": "The Holy Kaaba",
     "question": "What was the first house established for people to worship God?",
-    "used": 1
+    "used": 2
   },
   "what was the first major battle the prophet went out to from medina in which the muslims were victorious": {
     "answer": "The Battle of Badr",
     "question": "What was the first major battle the Prophet went out to from Medina, in which the Muslims were victorious?",
+    "used": 2
+  },
+  "what was the first mosque built in islam": {
+    "answer": "Quba Mosque",
+    "question": "What was the first mosque built in Islam?",
     "used": 1
   },
   "what was the first part of the holy quran to be revealed": {
     "answer": "“Read in the name of your Lord who created”",
     "question": "What was the first part of the Holy Quran to be revealed?",
-    "used": 1
+    "used": 2
   },
   "what was the house in which muslims secretly gathered at the beginning of the call in mecca": {
     "answer": "Dar al-Arqam ibn Abi al-Arqam",
     "question": "What was the house in which Muslims secretly gathered at the beginning of the call in Mecca?",
     "used": 1
   },
+  "what was the last expedition the prophet personally led": {
+    "answer": "The Battle of Tabuk",
+    "question": "What was the last expedition the Prophet ﷺ personally led?",
+    "used": 2
+  },
   "what was the name of the boy the prophet adopted before adoption was prohibited": {
     "answer": "Zayd ibn Harith",
     "question": "What was the name of the boy the Prophet ﷺ adopted before adoption was prohibited?",
-    "used": 1
+    "used": 2
   },
   "what was the name of the mount the prophet rode during the isra journey": {
     "answer": "Al-Buraq",
     "question": "What was the name of the mount the Prophet ﷺ rode during the Isra journey?",
-    "used": 1
+    "used": 2
   },
   "what was the name of the prophet's camel on which he migrated": {
     "answer": "Al-Qaswa’",
@@ -752,7 +1082,7 @@
   "what was the name of the prophet's mother": {
     "answer": "Aminah bint Wahb",
     "question": "What was the name of the Prophet’s ﷺ mother?",
-    "used": 1
+    "used": 2
   },
   "what was the name of the prophet's son from mariyah the copt": {
     "answer": "Ibrahim",
@@ -784,15 +1114,20 @@
     "question": "What work did the Prophet ﷺ do in his youth?",
     "used": 0
   },
+  "what yearned for the prophet when he moved away from it to the minbar": {
+    "answer": "The trunk of the palm tree",
+    "question": "What yearned for the Prophet ﷺ when he moved away from it to the minbar?",
+    "used": 1
+  },
   "when did god make mecca sacred as stated in the hadith": {
     "answer": "The day He created the heavens and the earth",
     "question": "When did God make Mecca sacred, as stated in the hadith?",
-    "used": 1
+    "used": 2
   },
   "when were the madinan surahs revealed": {
     "answer": "After the Hijra to Medina",
     "question": "When were the Madinan surahs revealed?",
-    "used": 1
+    "used": 2
   },
   "where did moses' mother cast her infant by god's command": {
     "answer": "In the sea",
@@ -802,7 +1137,7 @@
   "where did the first and second pledges of al aqabah take place": {
     "answer": "At al-Aqabah in Mina",
     "question": "Where did the first and second Pledges of al-Aqabah take place?",
-    "used": 1
+    "used": 2
   },
   "where did the journey of isra begin and where did it end": {
     "answer": "From the Sacred Mosque (Al-Masjid al-Haram) to the Farthest Mosque (Al-Aqsa)",
@@ -812,7 +1147,7 @@
   "where did the prophet deliver his great sermon during the farewell pilgrimage on the day of arafah": {
     "answer": "The bottom of Wadi Uranah",
     "question": "Where did the Prophet ﷺ deliver his great sermon during the Farewell Pilgrimage on the Day of Arafah?",
-    "used": 1
+    "used": 2
   },
   "where did the prophet first stay before entering medina": {
     "answer": "Quba",
@@ -828,6 +1163,11 @@
     "answer": "At Hudaybiyyah near Mecca (today’s al-Shumaisi)",
     "question": "Where did the Treaty of Hudaybiyyah take place?",
     "used": 1
+  },
+  "where do the pilgrims spend the night of the tenth of dhul hijjah after leaving arafat": {
+    "answer": "Muzdalifah",
+    "question": "Where do the pilgrims spend the night of the tenth of Dhul-Hijjah after leaving Arafat?",
+    "used": 2
   },
   "where does the person performing tawaf begin": {
     "answer": "From the Black Stone",
@@ -857,7 +1197,7 @@
   "where was the pledge of allegiance given to abu bakr al siddiq as caliph": {
     "answer": "Saqifah of Banu Sa’idah",
     "question": "Where was the pledge of allegiance given to Abu Bakr al-Siddiq as caliph?",
-    "used": 1
+    "used": 2
   },
   "where was the prophet born": {
     "answer": "Mecca",
@@ -877,17 +1217,17 @@
   "where were the two eids eid al fitr and eid al adha first legislated": {
     "answer": "In Medina",
     "question": "Where were the two Eids (Eid al-Fitr and Eid al-Adha) first legislated?",
-    "used": 1
+    "used": 2
   },
   "which animal was with the people of the cave": {
     "answer": "A dog",
     "question": "Which animal was with the People of the Cave?",
-    "used": 1
+    "used": 2
   },
   "which battle took place at mount uhud": {
     "answer": "The Battle of Uhud",
     "question": "Which battle took place at Mount Uhud?",
-    "used": 1
+    "used": 2
   },
   "which battle took place immediately after the conquest of makkah": {
     "answer": "The Battle of Hunayn",
@@ -897,22 +1237,47 @@
   "which bird brought solomon news of the kingdom of sheba": {
     "answer": "The hoopoe",
     "question": "Which bird brought Solomon news of the kingdom of Sheba?",
+    "used": 2
+  },
+  "which bird did god send to show the son of adam how to bury the body of his brother": {
+    "answer": "The crow",
+    "question": "Which bird did God send to show the son of Adam how to bury the body of his brother?",
+    "used": 1
+  },
+  "which book did god give to david peace be upon him": {
+    "answer": "The Zabur (Psalms)",
+    "question": "Which book did God give to David (peace be upon him)?",
     "used": 1
   },
   "which book did god reveal to jesus peace be upon him": {
     "answer": "The Injil (Gospel)",
     "question": "Which book did God reveal to Jesus (peace be upon him)?",
+    "used": 2
+  },
+  "which book did god reveal to moses peace be upon him": {
+    "answer": "The Torah",
+    "question": "Which book did God reveal to Moses (peace be upon him)?",
     "used": 1
   },
   "which caliph began using the hijri calendar": {
     "answer": "Umar ibn al-Khattab",
     "question": "Which caliph began using the Hijri calendar?",
+    "used": 2
+  },
+  "which caliph had the copies of the mushaf made and united the people on a single mushaf": {
+    "answer": "Uthman ibn Affan",
+    "question": "Which caliph had the copies of the Mushaf made and united the people on a single Mushaf?",
     "used": 1
+  },
+  "which caliph was stabbed while praying fajr in the prophet's mosque": {
+    "answer": "Umar ibn al-Khattab",
+    "question": "Which caliph was stabbed while praying Fajr in the Prophet’s Mosque?",
+    "used": 0
   },
   "which city did god swear by in his words and this secure city": {
     "answer": "Mecca",
     "question": "Which city did God swear by in His words, “And this secure city”?",
-    "used": 1
+    "used": 2
   },
   "which companion did the prophet pray for asking that allah strengthen islam through him and then he accepted islam": {
     "answer": "Umar ibn al-Khattab",
@@ -932,7 +1297,7 @@
   "which companion suggested digging the trench": {
     "answer": "Salman al-Farisi",
     "question": "Which companion suggested digging the trench?",
-    "used": 1
+    "used": 2
   },
   "which companion tortured in mecca kept saying ahad ahad one one": {
     "answer": "Bilal ibn Rabah",
@@ -942,42 +1307,52 @@
   "which companion was assigned to collect the quran during the reign of abu bakr": {
     "answer": "Zayd ibn Thabit",
     "question": "Which companion was assigned to collect the Quran during the reign of Abu Bakr?",
-    "used": 1
+    "used": 2
   },
   "which companion was nicknamed al faruq the one who distinguishes truth from falsehood": {
     "answer": "Umar ibn al-Khattab",
     "question": "Which companion was nicknamed Al-Faruq (the one who distinguishes truth from falsehood)?",
-    "used": 1
+    "used": 2
   },
   "which companion was nicknamed dhun nurayn possessor of two lights": {
     "answer": "Uthman ibn Affan",
     "question": "Which companion was nicknamed “Dhun-Nurayn” (Possessor of Two Lights)?",
+    "used": 2
+  },
+  "which companion was nicknamed the drawn sword of allah": {
+    "answer": "Khalid ibn al-Walid",
+    "question": "Which companion was nicknamed “the Drawn Sword of Allah”?",
     "used": 1
+  },
+  "which companion wrote the document of the treaty of hudaybiyyah": {
+    "answer": "Ali ibn Abi Talib",
+    "question": "Which companion wrote the document of the Treaty of Hudaybiyyah?",
+    "used": 2
   },
   "which companion's death caused the throne of the most merciful to shake": {
     "answer": "Sa’d ibn Mu’adh",
     "question": "Which companion’s death caused the Throne of the Most Merciful to shake?",
-    "used": 1
+    "used": 2
   },
   "which corner is touched along with the black stone but not kissed": {
     "answer": "The Yemeni Corner",
     "question": "Which corner is touched along with the Black Stone but not kissed?",
-    "used": 1
+    "used": 2
   },
   "which dates did the prophet speak of whoever eats seven dates in the morning neither poison nor magic will harm him that day": {
     "answer": "Ajwa dates",
     "question": "Which dates did the Prophet speak of: Whoever eats seven dates in the morning neither poison nor magic will harm him that day?",
-    "used": 0
+    "used": 1
   },
   "which daughter of the prophet married ali ibn abi talib": {
     "answer": "Fatimah az-Zahra",
     "question": "Which daughter of the Prophet married Ali ibn Abi Talib?",
-    "used": 1
+    "used": 2
   },
   "which expedition was called the expedition of hardship ghazwat al usrah": {
     "answer": "The Battle of Tabuk",
     "question": "Which expedition was called the Expedition of Hardship (Ghazwat al-Usrah)?",
-    "used": 1
+    "used": 2
   },
   "which family holds the custodianship sidanah of the holy kaaba": {
     "answer": "Banu Shaybah (Al Shaybi)",
@@ -989,15 +1364,20 @@
     "question": "Which female companion defended the Prophet ﷺ with her sword at Uhud?",
     "used": 1
   },
+  "which gate do visitors usually enter through to greet the prophet": {
+    "answer": "Bab al-Salam",
+    "question": "Which gate do visitors usually enter through to greet the Prophet ﷺ?",
+    "used": 1
+  },
   "which jamrah is stoned alone on the day of sacrifice yawm an nahr": {
     "answer": "Jamrat al-Aqabah",
     "question": "Which jamrah is stoned alone on the Day of Sacrifice (Yawm an-Nahr)?",
-    "used": 1
+    "used": 2
   },
   "which mosque is famous for the qiblah having changed during prayer": {
     "answer": "Masjid al-Qiblatayn",
     "question": "Which mosque is famous for the qiblah having changed during prayer?",
-    "used": 1
+    "used": 2
   },
   "which mountain did the prophet climb when the verse and warn your closest kindred was revealed": {
     "answer": "Safa",
@@ -1014,65 +1394,120 @@
     "question": "Which of the following is among the rulings of the Sacred Sanctuary (Haram) of Mecca?",
     "used": 2
   },
+  "which of the following is forbidden for a person in ihram for hajj or umrah": {
+    "answer": "Applying perfume",
+    "question": "Which of the following is forbidden for a person in ihram for Hajj or umrah?",
+    "used": 1
+  },
+  "which of the three mosques to which journeys are undertaken is in medina": {
+    "answer": "The Prophet’s Mosque",
+    "question": "Which of the three mosques to which journeys are undertaken is in Medina?",
+    "used": 1
+  },
+  "which pillar of islam does a muslim perform in mecca": {
+    "answer": "Hajj",
+    "question": "Which pillar of Islam does a Muslim perform in Mecca?",
+    "used": 2
+  },
+  "which prophet built the ark by god's command": {
+    "answer": "Noah (peace be upon him)",
+    "question": "Which prophet built the ark by God’s command?",
+    "used": 1
+  },
   "which prophet did god create from a mother without a father": {
     "answer": "Jesus (peace be upon him)",
     "question": "Which prophet did God create from a mother without a father?",
+    "used": 2
+  },
+  "which prophet did god make iron soft for": {
+    "answer": "David (peace be upon him)",
+    "question": "Which prophet did God make iron soft for?",
+    "used": 1
+  },
+  "which prophet heard the speech of the ant and smiled laughing": {
+    "answer": "Solomon (peace be upon him)",
+    "question": "Which prophet heard the speech of the ant and smiled, laughing?",
     "used": 1
   },
   "which prophet is mentioned by name most often in the holy quran": {
     "answer": "Moses (peace be upon him)",
     "question": "Which prophet is mentioned by name most often in the Holy Quran?",
+    "used": 2
+  },
+  "which prophet was sent to the people of madyan midian": {
+    "answer": "Shu'ayb peace be upon him",
+    "question": "Which prophet was sent to the people of Madyan (Midian)?",
     "used": 1
   },
   "which prophet was swallowed by the whale": {
     "answer": "Jonah (peace be upon him)",
     "question": "Which prophet was swallowed by the whale?",
-    "used": 1
+    "used": 2
   },
   "which prophet was the wind made subservient to": {
     "answer": "Solomon (peace be upon him)",
     "question": "Which prophet was the wind made subservient to?",
     "used": 1
   },
+  "which prophet was thrown into the fire which god made cool and safe": {
+    "answer": "Abraham (peace be upon him)",
+    "question": "Which prophet was thrown into the fire, which God made cool and safe?",
+    "used": 2
+  },
   "which prophet was thrown into the well by his brothers": {
     "answer": "Joseph (peace be upon him)",
     "question": "Which prophet was thrown into the well by his brothers?",
-    "used": 1
+    "used": 2
   },
   "which qiblah did the muslims pray toward in medina before it was changed to the kaaba": {
     "answer": "Bayt al-Maqdis (Jerusalem)",
     "question": "Which qiblah did the Muslims pray toward in Medina before it was changed to the Kaaba?",
     "used": 2
   },
+  "which stone is it sunnah to kiss during tawaf if possible": {
+    "answer": "The Black Stone",
+    "question": "Which stone is it sunnah to kiss during tawaf, if possible?",
+    "used": 1
+  },
   "which surah begins with the verse by time wal asr": {
     "answer": "Al-‘Asr",
     "question": "Which surah begins with the verse: “By time” (Wal-‘Asr)?",
-    "used": 1
+    "used": 2
   },
   "which surah begins with the verse say he is god the one": {
     "answer": "Al-Ikhlas",
     "question": "Which surah begins with the verse: “Say: He is God, the One”?",
     "used": 1
   },
+  "which surah begins with the verse say i seek refuge in the lord of the daybreak": {
+    "answer": "Al-Falaq",
+    "question": "Which surah begins with the verse: “Say: I seek refuge in the Lord of the daybreak”?",
+    "used": 2
+  },
   "which surah begins with the verse when the victory of god has come and the conquest": {
     "answer": "Al-Nasr",
     "question": "Which surah begins with the verse: “When the victory of God has come, and the conquest”?",
-    "used": 1
+    "used": 2
   },
   "which surah begins with the verse ya sin by the wise quran": {
     "answer": "Ya-Sin",
     "question": "Which surah begins with the verse: “Ya-Sin. By the wise Quran”?",
-    "used": 1
+    "used": 2
   },
   "which surah begins with the words of god blessed is he in whose hand is dominion": {
     "answer": "Al-Mulk",
     "question": "Which surah begins with the words of God: “Blessed is He in whose hand is dominion”?",
     "used": 1
   },
+  "which surah contains the complete story of a prophet in a single place": {
+    "answer": "Yusuf (Joseph)",
+    "question": "Which surah contains the complete story of a prophet in a single place?",
+    "used": 1
+  },
   "which surah discusses the battle of badr in detail": {
     "answer": "Al-Anfal",
     "question": "Which surah discusses the Battle of Badr in detail?",
-    "used": 1
+    "used": 2
   },
   "which surah discusses the battle of tabuk and those who stayed behind from it": {
     "answer": "At-Tawba",
@@ -1084,14 +1519,29 @@
     "question": "Which surah does the worshipper recite in every rak’ah (unit of prayer)?",
     "used": 2
   },
+  "which surah ends with the verse for you is your religion and for me is my religion": {
+    "answer": "Al-Kafirun",
+    "question": "Which surah ends with the verse: “For you is your religion, and for me is my religion”?",
+    "used": 2
+  },
   "which surah interceded for its reciter until he was forgiven": {
     "answer": "Al-Mulk",
     "question": "Which surah interceded for its reciter until he was forgiven?",
-    "used": 1
+    "used": 2
   },
   "which surah is called umm al kitab mother of the book and al sab' al mathani the seven oft repeated verses": {
     "answer": "Al-Fatiha",
     "question": "Which surah is called “Umm al-Kitab” (Mother of the Book) and “al-Sab’ al-Mathani” (the Seven Oft-Repeated Verses)?",
+    "used": 1
+  },
+  "which surah is equal to one third of the quran": {
+    "answer": "Al-Ikhlas",
+    "question": "Which surah is equal to one-third of the Quran?",
+    "used": 1
+  },
+  "which surah is named after a woman": {
+    "answer": "Maryam",
+    "question": "Which surah is named after a woman?",
     "used": 1
   },
   "which surah is named after the insect that makes honey": {
@@ -1099,9 +1549,19 @@
     "question": "Which surah is named after the insect that makes honey?",
     "used": 1
   },
+  "which surah is recommended to be recited on friday": {
+    "answer": "Al-Kahf",
+    "question": "Which surah is recommended to be recited on Friday?",
+    "used": 1
+  },
   "which surah mentions that the night of decree laylat al qadr is better than a thousand months": {
     "answer": "Al-Qadr",
     "question": "Which surah mentions that the Night of Decree (Laylat al-Qadr) is better than a thousand months?",
+    "used": 1
+  },
+  "which surah opens with the letter qaf": {
+    "answer": "Surat Qaf",
+    "question": "Which surah opens with the letter Qaf?",
     "used": 1
   },
   "which surah opens with the verse nun by the pen and what they inscribe": {
@@ -1112,22 +1572,32 @@
   "which tawaf is the pilgrim's last act before leaving mecca": {
     "answer": "Tawaf al-Wada’ (farewell tawaf)",
     "question": "Which tawaf is the pilgrim’s last act before leaving Mecca?",
-    "used": 1
+    "used": 2
   },
   "which two cities does the dajjal antichrist not enter": {
     "answer": "Mecca and Medina",
     "question": "Which two cities does the Dajjal (Antichrist) not enter?",
+    "used": 2
+  },
+  "which two mosques is it recommended for a visitor to medina to pray in": {
+    "answer": "The Prophet's Mosque and Quba Mosque",
+    "question": "Which two mosques is it recommended for a visitor to Medina to pray in?",
     "used": 1
+  },
+  "which two mosques is it recommended for a visitor to pray in": {
+    "answer": "The Prophet's Mosque and Quba Mosque",
+    "question": "Which two mosques is it recommended for a visitor to pray in?",
+    "used": 0
   },
   "which two surahs are sunnah to recite in the two rak'ahs of tawaf": {
     "answer": "Al-Kafirun and Al-Ikhlas",
     "question": "Which two surahs are sunnah to recite in the two rak’ahs of tawaf?",
-    "used": 1
+    "used": 2
   },
   "which two tribes make up the ansar": {
     "answer": "Al-Aws and al-Khazraj",
     "question": "Which two tribes make up the Ansar?",
-    "used": 1
+    "used": 2
   },
   "which uncle of the prophet was nicknamed the lion of allah": {
     "answer": "Hamzah ibn Abdul-Muttalib",
@@ -1142,22 +1612,37 @@
   "which verse did abu bakr recite to the people on the day of the prophet's death": {
     "answer": "“Muhammad is not but a messenger; other messengers have passed before him” (Quran 3:144)",
     "question": "Which verse did Abu Bakr recite to the people on the day of the Prophet’s death?",
-    "used": 1
+    "used": 2
   },
   "which verse did the prophet keep repeating as he broke the idols on the day of the conquest": {
     "answer": "Truth has come and falsehood has vanished",
     "question": "Which verse did the Prophet keep repeating as he broke the idols on the day of the conquest?",
-    "used": 0
+    "used": 1
+  },
+  "which well did uthman ibn affan buy and dedicate for the muslims": {
+    "answer": "The well of Rumah",
+    "question": "Which well did Uthman ibn Affan buy and dedicate for the Muslims?",
+    "used": 1
   },
   "which wife of the prophet was the daughter of abu bakr as siddiq": {
     "answer": "Aisha",
     "question": "Which wife of the Prophet ﷺ was the daughter of Abu Bakr as-Siddiq?",
     "used": 1
   },
+  "which wife of the prophet was the daughter of umar ibn al khattab": {
+    "answer": "Hafsah",
+    "question": "Which wife of the Prophet ﷺ was the daughter of Umar ibn al-Khattab?",
+    "used": 2
+  },
   "which woman did god cite as an example for the believers along with mary": {
     "answer": "Pharaoh’s wife",
     "question": "Which woman did God cite as an example for the believers, along with Mary?",
-    "used": 1
+    "used": 2
+  },
+  "who accompanied the prophet on his journey to ta'if": {
+    "answer": "Zayd ibn Harithah",
+    "question": "Who accompanied the Prophet ﷺ on his journey to Ta’if?",
+    "used": 2
   },
   "who are the ahl al suffa": {
     "answer": "The poor Muslims who took shelter at the rear of the Prophet’s Mosque",
@@ -1167,6 +1652,16 @@
   "who are the ansar helpers": {
     "answer": "The people of Medina who sheltered and supported the Prophet",
     "question": "Who are the Ansar (Helpers)?",
+    "used": 2
+  },
+  "who are the muhajirun emigrants": {
+    "answer": "The companions who migrated from Mecca to Medina",
+    "question": "Who are the “Muhajirun” (Emigrants)?",
+    "used": 1
+  },
+  "who called the adhan from atop the kaaba on the day of the conquest of mecca": {
+    "answer": "Bilal ibn Rabah",
+    "question": "Who called the adhan from atop the Kaaba on the day of the conquest of Mecca?",
     "used": 1
   },
   "who caught up with the prophet during the hijrah and his horse's legs sank into the ground": {
@@ -1177,12 +1672,17 @@
   "who first built the prophet's mosque": {
     "answer": "The Prophet ﷺ with his companions",
     "question": "Who first built the Prophet’s Mosque?",
-    "used": 1
+    "used": 2
+  },
+  "who founded quba mosque": {
+    "answer": "The Prophet ﷺ",
+    "question": "Who founded Quba Mosque?",
+    "used": 2
   },
   "who freed bilal ibn rabah from torture": {
     "answer": "Abu Bakr as-Siddiq",
     "question": "Who freed Bilal ibn Rabah from torture?",
-    "used": 1
+    "used": 2
   },
   "who is dhu al nun mentioned in the quran": {
     "answer": "Yunus (peace be upon him)",
@@ -1192,11 +1692,21 @@
   "who is the blind companion whom the prophet appointed to lead the people in prayer in medina": {
     "answer": "Abdullah ibn Umm Maktum",
     "question": "Who is the blind companion whom the Prophet appointed to lead the people in prayer in Medina?",
-    "used": 1
+    "used": 2
   },
   "who is the father of ishmael and isaac peace be upon them": {
     "answer": "Abraham (peace be upon him)",
     "question": "Who is the father of Ishmael and Isaac (peace be upon them)?",
+    "used": 2
+  },
+  "who is the father of mankind whom god created from clay": {
+    "answer": "Adam (peace be upon him)",
+    "question": "Who is the father of mankind whom God created from clay?",
+    "used": 1
+  },
+  "who is the khalil al rahman friend of the most merciful": {
+    "answer": "Abraham peace be upon him",
+    "question": "Who is the Khalil al-Rahman (Friend of the Most Merciful)?",
     "used": 1
   },
   "who is the master of the martyrs buried at mount uhud": {
@@ -1222,32 +1732,47 @@
   "who led the people in prayer during the prophet's final illness": {
     "answer": "Abu Bakr as-Siddiq",
     "question": "Who led the people in prayer during the Prophet's final illness?",
-    "used": 1
+    "used": 2
   },
   "who placed the black stone in its place when quraysh disagreed": {
     "answer": "The Prophet Muhammad ﷺ",
     "question": "Who placed the Black Stone in its place when Quraysh disagreed?",
     "used": 1
   },
+  "who raised the foundations of the holy kaaba": {
+    "answer": "Abraham and Ishmael (peace be upon them)",
+    "question": "Who raised the foundations of the Holy Kaaba?",
+    "used": 1
+  },
+  "who raised the foundations of the house the kaaba together with abraham peace be upon him": {
+    "answer": "Ishmael (peace be upon him)",
+    "question": "Who raised the foundations of the House (the Kaaba) together with Abraham (peace be upon him)?",
+    "used": 1
+  },
   "who slept in the prophet's bed on the night of the hijra": {
     "answer": "Ali ibn Abi Talib",
     "question": "Who slept in the Prophet’s ﷺ bed on the night of the Hijra?",
-    "used": 1
+    "used": 2
   },
   "who used to bring food to the prophet and abu bakr in the cave": {
     "answer": "Asma bint Abi Bakr",
     "question": "Who used to bring food to the Prophet ﷺ and Abu Bakr in the cave?",
-    "used": 1
+    "used": 2
   },
   "who was nicknamed the pharaoh of this ummah for his intense hostility toward the prophet": {
     "answer": "Abu Jahl",
     "question": "Who was nicknamed “the Pharaoh of this Ummah” for his intense hostility toward the Prophet ﷺ?",
-    "used": 1
+    "used": 2
   },
   "who was the commander of the army that wanted to demolish the kaaba in the year of the elephant": {
     "answer": "Abrahah the Abyssinian",
     "question": "Who was the commander of the army that wanted to demolish the Kaaba in the Year of the Elephant?",
-    "used": 1
+    "used": 2
+  },
+  "who was the commander of the last army the prophet prepared before his death": {
+    "answer": "Usamah ibn Zayd",
+    "question": "Who was the commander of the last army the Prophet ﷺ prepared before his death?",
+    "used": 2
   },
   "who was the commander of the polytheist army at the battle of uhud": {
     "answer": "Abu Sufyan ibn Harb",
@@ -1259,10 +1784,15 @@
     "question": "Who was the famous muezzin of the Messenger of Allah ﷺ?",
     "used": 1
   },
+  "who was the father of john yahya peace be upon him": {
+    "answer": "Zechariah (peace be upon him)",
+    "question": "Who was the father of John (Yahya), peace be upon him?",
+    "used": 1
+  },
   "who was the first ambassador in islam sent by the prophet to teach the people of medina": {
     "answer": "Mus’ab ibn Umayr",
     "question": "Who was the first ambassador in Islam sent by the Prophet ﷺ to teach the people of Medina?",
-    "used": 1
+    "used": 2
   },
   "who was the first boy to accept islam": {
     "answer": "Ali ibn Abi Talib",
@@ -1272,7 +1802,7 @@
   "who was the first caliph of the muslims after the prophet's death": {
     "answer": "Abu Bakr as-Siddiq",
     "question": "Who was the first caliph of the Muslims after the Prophet’s ﷺ death?",
-    "used": 1
+    "used": 2
   },
   "who was the first female martyr in islam tortured in mecca": {
     "answer": "Sumayyah bint Khayyat, mother of Ammar",
@@ -1282,7 +1812,17 @@
   "who was the first man to accept islam": {
     "answer": "Abu Bakr as-Siddiq",
     "question": "Who was the first man to accept Islam?",
-    "used": 1
+    "used": 2
+  },
+  "who was the first to collect the quran into a single volume after the death of the prophet pbuh": {
+    "answer": "Abu Bakr al-Siddiq",
+    "question": "Who was the first to collect the Quran into a single volume after the death of the Prophet (PBUH)?",
+    "used": 2
+  },
+  "who was the first to expand the sacred mosque": {
+    "answer": "Umar ibn al-Khattab",
+    "question": "Who was the first to expand the Sacred Mosque?",
+    "used": 2
   },
   "who was the king of abyssinia who treated the migrant muslims well": {
     "answer": "The Negus (al-Najashi)",
@@ -1292,12 +1832,12 @@
   "who was the mother of all the prophet's children except ibrahim": {
     "answer": "Khadijah bint Khuwaylid",
     "question": "Who was the mother of all the Prophet’s ﷺ children except Ibrahim?",
-    "used": 1
+    "used": 2
   },
   "who was the poet of the messenger from among the ansar": {
     "answer": "Hassan ibn Thabit",
     "question": "Who was the poet of the Messenger from among the Ansar?",
-    "used": 1
+    "used": 2
   },
   "who was the prophet's companion in the cave of thawr": {
     "answer": "Abu Bakr al-Siddiq",
@@ -1308,6 +1848,11 @@
     "answer": "Khadijah bint Khuwaylid",
     "question": "Who was the Prophet’s ﷺ first wife?",
     "used": 2
+  },
+  "who was the prophet's servant who served him for ten years": {
+    "answer": "Anas ibn Malik",
+    "question": "Who was the Prophet’s ﷺ servant who served him for ten years?",
+    "used": 1
   },
   "who was the roman emperor to whom the prophet sent a letter": {
     "answer": "Heraclius",
@@ -1327,12 +1872,17 @@
   "who was the youngest and most beloved of the prophet's daughters to him": {
     "answer": "Fatimah az-Zahra",
     "question": "Who was the youngest and most beloved of the Prophet's daughters to him?",
-    "used": 1
+    "used": 2
+  },
+  "who were the three who stayed behind from the expedition of tabuk and whom god later forgave": {
+    "answer": "Ka’b ibn Malik, Murarah ibn al-Rabi’, and Hilal ibn Umayyah",
+    "question": "Who were the three who stayed behind from the expedition of Tabuk and whom God later forgave?",
+    "used": 2
   },
   "whom did god command to call the people to hajj": {
     "answer": "Abraham (peace be upon him)",
     "question": "Whom did God command to call the people to Hajj?",
-    "used": 1
+    "used": 2
   },
   "whom did god praise in his words and they prefer others over themselves even though they are in need": {
     "answer": "The Ansar",
@@ -1347,21 +1897,26 @@
   "whom does the visitor greet after greeting the prophet": {
     "answer": "Abu Bakr and Umar (may God be pleased with them)",
     "question": "Whom does the visitor greet after greeting the Prophet ﷺ?",
-    "used": 1
+    "used": 2
   },
   "why was abu bakr given the title as siddiq the truthful": {
     "answer": "For believing the Prophet about the Isra incident",
     "question": "Why was Abu Bakr given the title As-Siddiq (the Truthful)?",
-    "used": 1
+    "used": 2
+  },
+  "with what did allah reinforce the believers on the day of badr": {
+    "answer": "With angels and rain",
+    "question": "With what did Allah reinforce the believers on the day of Badr?",
+    "used": 2
   },
   "with what did the prophet supplicate for medina": {
     "answer": "That He place in it twice the blessing that is in Mecca",
     "question": "With what did the Prophet ﷺ supplicate for Medina?",
-    "used": 1
+    "used": 2
   },
   "with which event does the hijri calendar begin": {
     "answer": "The Prophet’s ﷺ migration from Mecca to Medina",
     "question": "With which event does the Hijri calendar begin?",
-    "used": 1
+    "used": 2
   }
 }
